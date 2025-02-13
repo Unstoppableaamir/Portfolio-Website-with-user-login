@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+p,#userWelcome{
+    color: #ccc;
+}
+h1,h2{
+    color: #ccc;
+}
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #2600ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #183ca7;
+}
+.hidden {
+    display: none;
+}
+.portfolio-card {
+    background: #444;
+    color: #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.portfolio-card button {
+    margin-top: 10px;
+    background-color: #dc3545;
+}
+.portfolio-card button:hover {
+    background-color: #092fd6;
+}
+.portfolio-card button.edit {
+    background-color: #007bff;
+}
+.portfolio-card button.edit:hover {
+    background-color: #1b1a19;
+}
+
+
+
+/* media queries start here */
+
+@keyframes change{
+    0%
+    {
+        background-image: url(img1.jpg);
+    }
+    20%
+    {
+        background-image: url(img2.jpg);
+    }
+    40%
+    {
+        background-image: url(img4.jpg);
+    }
+    60%
+    {
+        background-image: url(img5.jpg);
+    }
+    80%
+    {
+        background-image: url(image.jpg);
+    }
+    100%
+    {
+        background-image: url(img2.jpg);
+    }
+}
+/* media queries end here */
